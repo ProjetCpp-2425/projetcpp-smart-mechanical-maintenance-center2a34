@@ -1,0 +1,2819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(28, 35, 64);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1291</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page1">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1291</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#widget {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/page1.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+      </property>
+      <widget class="QPushButton" name="buttonPage2">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>590</y>
+         <width>251</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent; /* Rendre le fond transparent */
+    border: none;                  /* Enlever la bordure (optionnel) */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">QWidget#page_2 {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/page2.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+     </property>
+     <widget class="QPushButton" name="ButtonConnecter">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>470</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: green;
+    border: none;                   /* Pas de bordure */
+    color: black;                   /* Couleur du texte */
+    padding: 10px;                  /* Espacement interne */
+    border-radius: 25px;            /* Coins arrondis */
+    font-weight: bold;              /* Texte en gras */
+}
+
+QPushButton:hover {
+    background-color:grey;
+    border: none;                          /* Pas de bordure au survol */
+    font-weight: bold;                     /* Assure que le texte reste en gras au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+    font-weight: bold;                          /* Texte en gras lors du clic */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Se connecter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sinscrir">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>160</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent;  /* Couleur de fond transparente */
+   
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pagecentral">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1291</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/home.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonPage">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonEmployes">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonMachines">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>480</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>230</y>
+          <width>281</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget_2 {
+	background-color: rgb(0, 0, 0);
+    
+}
+</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="employes">
+       <property name="styleSheet">
+        <string notr="true">QWidget#employes {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/employes.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonMachines1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>490</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonPage1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonEmployes1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_10">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>240</y>
+          <width>351</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+    font-family: &quot;OCR A Extended&quot;;  /* Définit la police sur OCR A Extended */
+    /*font-size: 14px;                /* Taille de la police (ajustable) */
+   /* color: black;                   /* Couleur du texte */
+    /*padding: 5px;                   /* Espacement interne */
+   /* border: 1px solid gray;         /* Bordure grise */
+   /* border-radius: 5px;             /* Coins arrondis */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>380</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>440</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_11">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>500</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_5">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>240</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Trier par</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>salaire</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>spécialité</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>etat</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="stat1Button">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>240</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #3CC38A; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    /*border-radius: 10px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    border: 2px solid #2A9F71; /* Bordure plus foncée */
+}
+
+QPushButton:hover {
+    background-color: #2A9F71; /* Couleur de fond plus foncée au survol */
+}
+
+QPushButton:pressed {
+    background-color: #218F64; /* Couleur de fond plus foncée lorsqu'on clique */
+    border: 2px solid #1E7D5A; /* Bordure plus foncée lorsqu'on clique */
+}</string>
+        </property>
+        <property name="text">
+         <string>Stat</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="vehicules">
+       <property name="styleSheet">
+        <string notr="true">QWidget#vehicules {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/vehicules.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonEmployes2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonPage2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonMachines2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>480</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>240</y>
+          <width>351</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+    font-family: &quot;OCR A Extended&quot;;  /* Définit la police sur OCR A Extended */
+    /*font-size: 14px;                /* Taille de la police (ajustable) */
+   /* color: black;                   /* Couleur du texte */
+    /*padding: 5px;                   /* Espacement interne */
+   /* border: 1px solid gray;         /* Bordure grise */
+   /* border-radius: 5px;             /* Coins arrondis */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_20">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>380</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_21">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>430</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_22">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>480</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>530</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 11px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Choisir</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>580</y>
+          <width>181</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDateEdit {
+  
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 10px; /* Espacement interne */
+    color: white; /* Couleur du texte */
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style pour le bouton de sélection de date */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de sélection de date */
+QDateEdit::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QDateEdit:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QDateEdit:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_8">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>240</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Trier par</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="stat2">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>240</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #3CC38A; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    /*border-radius: 10px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    border: 2px solid #2A9F71; /* Bordure plus foncée */
+}
+
+QPushButton:hover {
+    background-color: #2A9F71; /* Couleur de fond plus foncée au survol */
+}
+
+QPushButton:pressed {
+    background-color: #218F64; /* Couleur de fond plus foncée lorsqu'on clique */
+    border: 2px solid #1E7D5A; /* Bordure plus foncée lorsqu'on clique */
+}</string>
+        </property>
+        <property name="text">
+         <string>Stat</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="machines">
+       <property name="styleSheet">
+        <string notr="true">QWidget#machines {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/machines.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonPage3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonMachines3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>490</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonEmployes3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_9">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>240</y>
+          <width>351</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+    font-family: &quot;OCR A Extended&quot;;  /* Définit la police sur OCR A Extended */
+    /*font-size: 14px;                /* Taille de la police (ajustable) */
+   /* color: black;                   /* Couleur du texte */
+    /*padding: 5px;                   /* Espacement interne */
+   /* border: 1px solid gray;         /* Bordure grise */
+   /* border-radius: 5px;             /* Coins arrondis */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_6">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>240</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Trier par</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="stat3">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>240</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #3CC38A; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    /*border-radius: 10px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    border: 2px solid #2A9F71; /* Bordure plus foncée */
+}
+
+QPushButton:hover {
+    background-color: #2A9F71; /* Couleur de fond plus foncée au survol */
+}
+
+QPushButton:pressed {
+    background-color: #218F64; /* Couleur de fond plus foncée lorsqu'on clique */
+    border: 2px solid #1E7D5A; /* Bordure plus foncée lorsqu'on clique */
+}</string>
+        </property>
+        <property name="text">
+         <string>Stat</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableMachine">
+        <property name="geometry">
+         <rect>
+          <x>675</x>
+          <y>381</y>
+          <width>541</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 20px; /* Coins arrondis */
+background-color: rgb(27, 44, 85);
+color:white;</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>false</bool>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QPushButton" name="confirmerMachine">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>680</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: #4CAF50; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+   border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: green; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:green; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Confirmer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="modifierButton">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>680</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: #b0b7c7; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: #1b2c55; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Modifier</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="supprimerMachine">
+        <property name="geometry">
+         <rect>
+          <x>900</x>
+          <y>680</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: red; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+   border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: #1b2c55; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tousButton">
+        <property name="geometry">
+         <rect>
+          <x>1080</x>
+          <y>680</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color:#b0b7c7; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: #1b2c55; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Tous</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="date_maintenance">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>570</y>
+          <width>181</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDateEdit {
+  
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 10px; /* Espacement interne */
+    color: white; /* Couleur du texte */
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style pour le bouton de sélection de date */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de sélection de date */
+QDateEdit::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QDateEdit:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QDateEdit:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="type_m">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>450</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Choisir</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tour CNC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fraiseuse CNC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Robots industriels</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Imprimante 3D</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="id_machine">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>400</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="statut_m">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>510</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Choisir</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>en fonctionnement</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>en maintenance</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>en panne</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>310</y>
+          <width>711</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Impact</family>
+          <pointsize>12</pointsize>
+          <bold>false</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+        </property>
+        <property name="text">
+         <string>ID            Type                                Statut                  Date maintenance            Localisation</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="localisation">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>640</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Choisir</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tunis</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Monastir</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jendouba</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bizert</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="trensactions">
+       <property name="styleSheet">
+        <string notr="true">QWidget#trensactions {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/trensactions.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonPage4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonMachines4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>490</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonEmployes4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>230</y>
+          <width>351</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+    font-family: &quot;OCR A Extended&quot;;  /* Définit la police sur OCR A Extended */
+    /*font-size: 14px;                /* Taille de la police (ajustable) */
+   /* color: black;                   /* Couleur du texte */
+    /*padding: 5px;                   /* Espacement interne */
+   /* border: 1px solid gray;         /* Bordure grise */
+   /* border-radius: 5px;             /* Coins arrondis */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_15">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>360</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_16">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>430</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_17">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>500</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_19">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>640</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>570</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Choisir</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="comboBox_7">
+        <property name="geometry">
+         <rect>
+          <x>1030</x>
+          <y>230</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Trier par</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="stat4">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>230</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #3CC38A; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    /*border-radius: 10px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    border: 2px solid #2A9F71; /* Bordure plus foncée */
+}
+
+QPushButton:hover {
+    background-color: #2A9F71; /* Couleur de fond plus foncée au survol */
+}
+
+QPushButton:pressed {
+    background-color: #218F64; /* Couleur de fond plus foncée lorsqu'on clique */
+    border: 2px solid #1E7D5A; /* Bordure plus foncée lorsqu'on clique */
+}</string>
+        </property>
+        <property name="text">
+         <string>Stat</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="apropos">
+       <property name="styleSheet">
+        <string notr="true">QWidget#apropos {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/apropos.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+       </property>
+       <widget class="QPushButton" name="ButtonPage5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>308</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonVehicules5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonMachines5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>480</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonEmployes5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>360</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonTrensactions5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ButtonApropos5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>610</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;            /* Couleur de fond transparente */
+    border: 2px solid transparent;            /* Pas de bordure par défaut */
+    color: black;                             /* Couleur du texte */
+    padding: 10px;                            /* Espacement interne */
+    border-radius: 20px;                      /* Coins arrondis */
+}
+
+QPushButton:hover {
+   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacité) */
+   /* border: 2px solid gray;                     /* Bordure grise au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true">QWidget#page_3 {
+    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/page3.png&quot;);
+    background-position: center;   /* Centrer l'image */
+    background-repeat: no-repeat;  /* Ne pas répéter l'image */
+    background-size: cover;        /* Adapter l'image à la taille du widget */
+}
+</string>
+     </property>
+     <widget class="QPushButton" name="seconnecter">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>160</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent;  /* Couleur de fond transparente */
+   
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonCreer">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>610</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: green;
+    border: none;                   /* Pas de bordure */
+    color: black;                   /* Couleur du texte */
+    padding: 10px;                  /* Espacement interne */
+    border-radius: 25px;            /* Coins arrondis */
+    font-weight: bold;              /* Texte en gras */
+}
+
+QPushButton:hover {
+    background-color:grey;
+    border: none;                          /* Pas de bordure au survol */
+    font-weight: bold;                     /* Assure que le texte reste en gras au survol */
+}
+
+QPushButton:pressed {
+    background-color: rgba(169, 169, 169, 255); /* Couleur gris foncé lors du clic */
+    font-weight: bold;                          /* Texte en gras lors du clic */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Créer</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
