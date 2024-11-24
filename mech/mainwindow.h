@@ -72,7 +72,7 @@ private slots:
     void showApropos();
     void animateWidgetAppearance(QWidget* widget);
     void startBlinkingEffect(QWidget* widget);
-    void setupSlidingAnimation(QWidget* widget);
+    //void setupSlidingAnimation(QWidget* widget);
 
     void on_confirmerMachine_clicked();
     void setupTable();

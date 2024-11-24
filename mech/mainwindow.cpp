@@ -646,7 +646,6 @@ void MainWindow::loadDataFromDatabase()
     }
 }
 ////////////////////////////////
-
 void MainWindow::exportToPDF()
 {
     // Ouvrir une boîte de dialogue pour choisir où enregistrer le fichier PDF
@@ -656,130 +655,131 @@ void MainWindow::exportToPDF()
         return; // Annuler si aucun fichier n'a été choisi
     }
 
-    // Créer un objet QSqlQuery pour la requête SQL
-    QSqlQuery query;
-    query.prepare("SELECT * FROM machine");
-
-    if (!query.exec()) {
-        qDebug() << "Erreur lors de l'exécution de la requête: " << query.lastError().text();
+    // Obtenir le modèle actuellement utilisé par tableMachine
+    QAbstractItemModel *model = ui->tableMachine->model();
+    if (!model) {
+        qDebug() << "Aucun modèle trouvé pour tableMachine.";
         return;
     }
 
-    // Créer un QSqlQueryModel pour lier la requête et afficher les résultats
-    QSqlQueryModel *model = new QSqlQueryModel;
-    model->setQuery(query);  // Appliquer la requête à ce modèle
+    // Indices des colonnes à exporter (dans l'ordre correct)
+    QVector<int> columnIndices = {1, 2, 3, 4, 5}; // ID, TYPE, STATUT, D.MAINT, LOCALISATION
+
+    // Titres correspondants pour les colonnes
+    QStringList columnTitles = {"ID", "TYPE", "STATUT", "D.MAINT", "LOCALISATION"};
 
     // Créer un objet QPdfWriter pour générer le fichier PDF
     QPdfWriter writer(fileName);
-    writer.setPageSize(QPageSize::A4); // Utilisez QPageSize::A4
+    writer.setPageSize(QPageSize::A4);
     writer.setResolution(300);
 
-    // Créer un QPainter pour dessiner sur le PDF
     QPainter painter(&writer);
     if (!painter.isActive()) {
         qDebug() << "Erreur lors de l'initialisation du QPainter pour le PDF.";
         return;
     }
 
-    // Calculer la hauteur de la page et les marges
+    // Configurer les polices
+    QFont titleFont("Arial", 20, QFont::Bold);
+    QFont columnFont("Arial", 12, QFont::Bold);
+    QFont dataFont("Arial", 10);
+
+    // Calculer la hauteur et largeur de la page
     int pageHeight = writer.height();
     int pageWidth = writer.width();
     int marginLeft = 20;
     int marginTop = 20;
     int marginBottom = 20;
-    int columnSpacing = 70;  // Espacement entre les colonnes
-    int rowHeight = 60;      // Hauteur des lignes
 
-    // Configurer la taille de la police pour le titre
-    painter.setFont(QFont("Arial", 16, QFont::Bold));
-    painter.setPen(QPen(Qt::darkBlue));  // Définir la couleur du texte
+    // Calculer les largeurs des colonnes dynamiquement
+    QVector<int> columnWidths;
+    painter.setFont(columnFont);
 
-    // Calculer la largeur du titre pour le centrer
+    for (const QString &title : columnTitles) {
+        int width = painter.fontMetrics().horizontalAdvance(title) + 20; // Ajouter une marge
+        columnWidths.append(width);
+    }
+
+    // Calculer la largeur totale et ajuster proportionnellement
+    int totalWidth = std::accumulate(columnWidths.begin(), columnWidths.end(), 0);
+    double scaleFactor = (pageWidth - marginLeft * 2) / static_cast<double>(totalWidth);
+
+    for (int &width : columnWidths) {
+        width = static_cast<int>(width * scaleFactor);
+    }
+
+    // Dessiner le titre du tableau
+    painter.setFont(titleFont);
+    painter.setPen(QPen(Qt::darkBlue));
+
     QString title = "Tableau des Machines";
     int titleWidth = painter.fontMetrics().horizontalAdvance(title);
-    int titleX = (pageWidth - titleWidth) / 2;  // Centrer le titre horizontalement
-
+    int titleX = (pageWidth - titleWidth) / 2; // Centrer le titre horizontalement
     painter.drawText(titleX, marginTop, title);
-    marginTop += 80;  // Espacement sous le titre
 
-    // Configurer la police pour les en-têtes de colonne
-    QFont columnFont("Arial", 12, QFont::Bold);
+    marginTop += 80; // Espacement sous le titre
+
+    // Dessiner les en-têtes de colonnes
     painter.setFont(columnFont);
-    painter.setPen(QPen(Qt::black)); // Couleur du texte en noir
+    painter.setPen(QPen(Qt::black));
 
     int x = marginLeft;
     int y = marginTop;
-
-    // Les en-têtes de colonnes spécifiés
-    QStringList headers = {"ID", "Type", "Statut", "D.Maintenance", "Localisation"};
-    int columnCount = headers.size();
-    QVector<int> columnWidths(columnCount, 120); // Largeur par défaut pour chaque colonne
-
-    // Calculer la largeur des colonnes en fonction du contenu
-    for (int col = 0; col < columnCount; ++col) {
-        int maxWidth = 0;
-        for (int row = 0; row < model->rowCount(); ++row) {
-            QString cellText = model->data(model->index(row, col)).toString();
-            maxWidth = qMax(maxWidth, painter.fontMetrics().horizontalAdvance(cellText));  // Utilisation de horizontalAdvance
-        }
-        columnWidths[col] = maxWidth + 10 + columnSpacing;  // Ajouter un peu de marge et de l'espacement entre les colonnes
-    }
-
-    // Dessiner l'en-tête du tableau
-    for (int i = 0; i < columnCount; ++i) {
-        painter.drawText(x, y, columnWidths[i], rowHeight, Qt::AlignCenter, headers[i]);
+    for (int i = 0; i < columnTitles.size(); ++i) {
+        painter.drawText(x, y, columnWidths[i], 40, Qt::AlignCenter, columnTitles[i]);
         x += columnWidths[i];
     }
 
-    y += rowHeight;  // Espacement après l'en-tête
+    y += 40; // Espacement après les en-têtes
 
-    // Dessiner les données du tableau
-    QFont dataFont("Arial", 10);
-    painter.setFont(dataFont);  // Police plus petite pour les données
-
+    // Dessiner les données affichées dans la table
+    painter.setFont(dataFont);
     for (int row = 0; row < model->rowCount(); ++row) {
         x = marginLeft;
-        for (int col = 0; col < columnCount; ++col) {
-            QString cellText = model->data(model->index(row, col)).toString();
+        for (int col = 0; col < columnIndices.size(); ++col) {
+            int modelCol = columnIndices[col];
+            QString cellText = model->data(model->index(row, modelCol)).toString();
 
-            // Appliquer la couleur rouge à la colonne ID (col == 0 pour la première colonne)
+            // Appliquer la couleur rouge à la colonne ID (col == 0)
             if (col == 0) {
-                painter.setPen(QPen(Qt::red));  // Définir la couleur du texte en rouge
+                painter.setPen(QPen(Qt::red));
             } else {
-                painter.setPen(QPen(Qt::black));  // Couleur du texte en noir pour les autres colonnes
+                painter.setPen(QPen(Qt::black));
             }
 
-            painter.drawText(x, y, columnWidths[col], rowHeight, Qt::AlignCenter, cellText);
+            painter.drawText(x, y, columnWidths[col], 40, Qt::AlignCenter, cellText);
             x += columnWidths[col];
         }
-        y += rowHeight;  // Espacement entre les lignes
+        y += 40; // Espacement entre les lignes
 
         // Si la page est pleine, ajouter une nouvelle page
         if (y > pageHeight - marginBottom) {
             painter.end();
             writer.newPage();
             painter.begin(&writer);
-            y = marginTop; // Réinitialiser la position verticale
-            // Redessiner le titre et l'en-tête de colonne pour la nouvelle page
-            painter.setFont(QFont("Arial", 16, QFont::Bold));
-            painter.setPen(QPen(Qt::green));  // Titre vert
-            painter.drawText(titleX, marginTop, title);
-            marginTop += 40;
+
+            // Redessiner les en-têtes
+            painter.setFont(columnFont);
+            painter.setPen(QPen(Qt::black));
             x = marginLeft;
-            // Redessiner l'en-tête
-            for (int i = 0; i < columnCount; ++i) {
-                painter.drawText(x, y, columnWidths[i], rowHeight, Qt::AlignCenter, headers[i]);
+            y = marginTop;
+
+            for (int i = 0; i < columnTitles.size(); ++i) {
+                painter.drawText(x, y, columnWidths[i], 40, Qt::AlignCenter, columnTitles[i]);
                 x += columnWidths[i];
             }
-            y += rowHeight;
+            y += 40;
         }
     }
 
-    // Terminer l'écriture du PDF
     painter.end();
-
     qDebug() << "Export PDF terminé!";
 }
+
+
+
+
+
 ///////////////////////////
 // Méthode pour mettre à jour l'image
 void MainWindow::updateImage(int index) {
@@ -863,7 +863,7 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 
         if (button == ui->ajoutcentreBtn) {
             animation = iconAnimation_ajoutcentre;
-            button->setText("Ajouter un centre");
+            button->setText("emplacement");
         } else if (button == ui->stat) {
             animation = iconAnimation_stat;
             button->setText("Statistiques");
@@ -1362,7 +1362,7 @@ void MainWindow::setupCalendar()
         QDate selectedDate = calendar->selectedDate();
         qDebug() << "Date sélectionnée :" << selectedDate.toString("dd/MM/yyyy");
     });
-    connect(calendar, &QCalendarWidget::selectionChanged, this, &MainWindow::onDateSelected);
+    //connect(calendar, &QCalendarWidget::selectionChanged, this, &MainWindow::onDateSelected);
 }
 
 // Marquer les dates de maintenance sur le calendrier

@@ -1,3 +1,4 @@
+
 import QtQuick 2.15
 import QtPositioning 5.15
 import QtLocation 5.15
@@ -40,10 +41,67 @@ Rectangle {
             MapQuickItem {
                 coordinate: model.coordinate
                 anchorPoint: Qt.point(12, 12) // Centre l'image sur le marqueur
-                sourceItem: Image {
-                    source: "file:///C:/Users/21658/Desktop/projet2024-2025/mech/marker.png"
+                sourceItem: Item {
                     width: 24
                     height: 24
+                    Image {
+                        source: "file:///C:/Users/21658/Desktop/projet2024-2025/mech/marker.png"
+                        anchors.fill: parent
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: console.log("Clicked on:", model.name)
+                    }
+                }
+            }
+        }
+
+        // Tooltip spécifique pour Tunis
+        Item {
+            id: tooltip
+            visible: false
+            width: 120
+            height: 40
+            x: map.toScreenCoordinates(QtPositioning.coordinate(36.8, 10.1)).x - width / 2
+            y: map.toScreenCoordinates(QtPositioning.coordinate(36.8, 10.1)).y - 50
+            Rectangle {
+                anchors.fill: parent
+                radius: 8
+                color: "black"
+                opacity: 0.8
+                Text {
+                    anchors.centerIn: parent
+                    text: "Tunis"
+                    color: "white"
+                    font.bold: true
+                }
+            }
+
+            // Mise à jour de la position lors du déplacement de la carte
+            Connections {
+                target: map
+                function onCenterChanged() {
+                    tooltip.x = map.toScreenCoordinates(QtPositioning.coordinate(36.8, 10.1)).x - tooltip.width / 2;
+                    tooltip.y = map.toScreenCoordinates(QtPositioning.coordinate(36.8, 10.1)).y - 50;
+                }
+            }
+        }
+
+        // MouseArea pour afficher/masquer le tooltip
+        MapQuickItem {
+            coordinate: QtPositioning.coordinate(36.8, 10.1)
+            anchorPoint: Qt.point(12, 12)
+            sourceItem: Item {
+                width: 24
+                height: 24
+                Image {
+                    source: "file:///C:/Users/21658/Desktop/projet2024-2025/mech/marker.png"
+                    anchors.fill: parent
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    onEntered: tooltip.visible = true
+                    onExited: tooltip.visible = false
                 }
             }
         }

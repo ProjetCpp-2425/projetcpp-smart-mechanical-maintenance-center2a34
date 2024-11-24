@@ -1472,7 +1472,7 @@ QPushButton::icon {
         <property name="geometry">
          <rect>
           <x>1270</x>
-          <y>460</y>
+          <y>540</y>
           <width>201</width>
           <height>61</height>
          </rect>
@@ -1594,7 +1594,7 @@ QPushButton::icon {
         <property name="geometry">
          <rect>
           <x>1270</x>
-          <y>670</y>
+          <y>660</y>
           <width>191</width>
           <height>61</height>
          </rect>
@@ -1665,7 +1665,7 @@ QPushButton::icon {
 </string>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="mapcentre">
          <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -2023,7 +2023,7 @@ QPushButton:pressed {
            <rect>
             <x>330</x>
             <y>20</y>
-            <width>221</width>
+            <width>211</width>
             <height>31</height>
            </rect>
           </property>
@@ -2444,9 +2444,9 @@ color:white;</string>
          <widget class="QComboBox" name="comboBoxtrie">
           <property name="geometry">
            <rect>
-            <x>600</x>
+            <x>560</x>
             <y>20</y>
-            <width>271</width>
+            <width>311</width>
             <height>31</height>
            </rect>
           </property>
@@ -2601,12 +2601,13 @@ color: rgb(255, 0, 0);</string>
          <zorder>label</zorder>
          <zorder>calendarWidget</zorder>
         </widget>
+        <widget class="QWidget" name="pdf"/>
        </widget>
        <widget class="QPushButton" name="calendrierBtn">
         <property name="geometry">
          <rect>
           <x>1270</x>
-          <y>530</y>
+          <y>470</y>
           <width>191</width>
           <height>61</height>
          </rect>

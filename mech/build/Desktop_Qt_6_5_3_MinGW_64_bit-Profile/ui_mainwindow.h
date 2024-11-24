@@ -116,6 +116,7 @@ public:
     QWidget *calendrier;
     QCalendarWidget *calendarWidget;
     QLabel *label;
+    QWidget *pdf;
     QPushButton *calendrierBtn;
     QWidget *widget_3;
     QWidget *trensactions;
@@ -1081,7 +1082,7 @@ public:
         stat->setIcon(icon);
         exportButton = new QPushButton(machines);
         exportButton->setObjectName("exportButton");
-        exportButton->setGeometry(QRect(1270, 460, 201, 61));
+        exportButton->setGeometry(QRect(1270, 540, 201, 61));
         exportButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: transparent; /* Fond transparent */\n"
 "    color: transparent; /* Masquer le texte par d\303\251faut */\n"
@@ -1179,7 +1180,7 @@ public:
         donneesBtn->setIcon(icon2);
         ajoutcentreBtn = new QPushButton(machines);
         ajoutcentreBtn->setObjectName("ajoutcentreBtn");
-        ajoutcentreBtn->setGeometry(QRect(1270, 670, 191, 61));
+        ajoutcentreBtn->setGeometry(QRect(1270, 660, 191, 61));
         ajoutcentreBtn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: transparent; /* Fond transparent */\n"
 "    color: transparent; /* Masquer le texte par d\303\251faut */\n"
@@ -1447,7 +1448,7 @@ public:
 ""));
         searchLineEdit = new QLineEdit(donnees);
         searchLineEdit->setObjectName("searchLineEdit");
-        searchLineEdit->setGeometry(QRect(330, 20, 221, 31));
+        searchLineEdit->setGeometry(QRect(330, 20, 211, 31));
         searchLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "	background-color: rgb(255, 255, 255);\n"
 "    font-family: \"OCR A Extended\";  /* D\303\251finit la police sur OCR A Extended */\n"
@@ -1657,7 +1658,7 @@ public:
         comboBoxtrie->addItem(QString());
         comboBoxtrie->addItem(QString());
         comboBoxtrie->setObjectName("comboBoxtrie");
-        comboBoxtrie->setGeometry(QRect(600, 20, 271, 31));
+        comboBoxtrie->setGeometry(QRect(560, 20, 311, 31));
         comboBoxtrie->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
 "	background-color: rgb(188, 184, 238);\n"
@@ -1745,9 +1746,12 @@ public:
         stackedWidget_3->addWidget(calendrier);
         label->raise();
         calendarWidget->raise();
+        pdf = new QWidget();
+        pdf->setObjectName("pdf");
+        stackedWidget_3->addWidget(pdf);
         calendrierBtn = new QPushButton(machines);
         calendrierBtn->setObjectName("calendrierBtn");
-        calendrierBtn->setGeometry(QRect(1270, 530, 191, 61));
+        calendrierBtn->setGeometry(QRect(1270, 470, 191, 61));
         calendrierBtn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: transparent; /* Fond transparent */\n"
 "    color: transparent; /* Masquer le texte par d\303\251faut */\n"
@@ -2270,7 +2274,7 @@ public:
         retranslateUi(MainWindow);
 
         stackedWidget->setCurrentIndex(2);
-        stackedWidget_3->setCurrentIndex(3);
+        stackedWidget_3->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

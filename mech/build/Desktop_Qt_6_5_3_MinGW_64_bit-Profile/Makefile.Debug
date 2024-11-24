@@ -1449,52 +1449,7 @@ debug/machine.o: ../../machine.cpp ../../machine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		../../connection.h \
-		ui_mainwindow.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/QIcon \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QApplication \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qeventloop.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qmutex.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qresultstore.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthread.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qrunnable.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qexception.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qpromise.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QComboBox \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qcombobox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QDateEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextformat.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QTableView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtableview.h
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\machine.o ..\..\machine.cpp
 
 debug/main.o: ../../main.cpp ../../mainwindow.h \
@@ -2193,51 +2148,6 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_mainwindow.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/QIcon \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QApplication \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qeventloop.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qmutex.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qresultstore.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthread.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qrunnable.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qexception.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qpromise.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QComboBox \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qcombobox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QDateEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextformat.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QTableView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtableview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qgraphicseffect.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QParallelAnimationGroup \
@@ -2252,6 +2162,18 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlrecord.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QTableWidget \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QPalette \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QFileDialog \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -2288,15 +2210,18 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QBrush \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QTextCharFormat \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextformat.h \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/QBarDataRow \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QLoggingCategory \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qloggingcategory.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 
 debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/QVariant \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qvariant.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qatomic.h \
+		ui_mainwindow.h \
+		../../connection.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlDatabase \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqldatabase.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsqlglobal.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qglobal.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qtversionchecks.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qconfig.h \
@@ -2318,6 +2243,10 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qlogging.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qflags.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qatomic.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qbasicatomic.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qatomic_cxx11.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qgenericatomic.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qconstructormacros.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -2335,10 +2264,11 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qtresource.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qttranslation.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qversiontagging.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qbasicatomic.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qatomic_cxx11.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qgenericatomic.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qmetatype.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsql-config.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsqlexports.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qbytearray.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qrefcount.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qnamespace.h \
@@ -2353,21 +2283,24 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringfwd.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qiodevicebase.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfloat16.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qhashfunctions.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringliteral.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringalgorithms.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qanystringview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qutf8stringview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringtokenizer.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qstringbuilder.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlError \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlerror.h \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlQuery \
+		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlquery.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qvariant.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qmetatype.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qiodevicebase.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qfloat16.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qhashfunctions.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qmath.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qiterable.h \
@@ -2399,42 +2332,27 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qobject_impl.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qbindingstorage.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QApplication \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qtgui-config.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qtguiexports.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qeventloop.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qmutex.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qresultstore.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qthread.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qrunnable.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qexception.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qpointer.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qpromise.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qpoint.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qmargins.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qcursor.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qbitmap.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qaction.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qicon.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpaintdevice.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qrect.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qpoint.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qcolor.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qrgb.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qrgba64.h \
@@ -2444,24 +2362,17 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpolygon.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qregion.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qline.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qlocale.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QComboBox \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qcombobox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qaction.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qicon.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpalette.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qbrush.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qfont.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qfontmetrics.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qfontinfo.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qcursor.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qbitmap.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qevent.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qiodevice.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qpointer.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qurl.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qvector2d.h \
@@ -2475,76 +2386,16 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QSize \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QSizeF \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QTransform \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qframe.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QDateEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QDialog \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextformat.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qpen.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextoption.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QPushButton \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
-		ui_mainwindow.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/QIcon \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QCalendarWidget \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qcalendarwidget.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		D:/Qt/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QLabel \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
-		D:/Qt/6.5.3/mingw_64/include/QtGui/qpicture.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QStackedWidget \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstackedwidget.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QTableView \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtableview.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QWidget \
-		../../connection.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlDatabase \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqldatabase.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsqlglobal.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsql-config.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qtsqlexports.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlError \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlerror.h \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlQuery \
-		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlquery.h \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
-		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
 		../../machine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QString \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QDate \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qlocale.h \
 		D:/Qt/6.5.3/mingw_64/include/QtSql/QSqlQueryModel \
 		D:/Qt/6.5.3/mingw_64/include/QtSql/qsqlquerymodel.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
 		../../mainwindow.h \
@@ -2552,9 +2403,20 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qsequentialanimationgroup.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qanimationgroup.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qabstractanimation.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QStackedWidget \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qstackedwidget.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QWidget \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QSortFilterProxyModel \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qsortfilterproxymodel.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qabstractproxymodel.h \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QPushButton \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/QPropertyAnimation \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qpropertyanimation.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCore/qvariantanimation.h \
@@ -2569,14 +2431,18 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/qtcharts-config.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/qtchartsexports.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QPen \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qpen.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/QFont \
+		D:/Qt/6.5.3/mingw_64/include/QtCore/QVariant \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/QAbstractSeries \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/qabstractseries.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/QChart \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QGraphicsView \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qgraphicsview.h \
 		D:/Qt/6.5.3/mingw_64/include/QtGui/qpainter.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/QBarSeries \
 		D:/Qt/6.5.3/mingw_64/include/QtCharts/qbarseries.h \
@@ -2637,6 +2503,8 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtQml/qqmlerror.h \
 		D:/Qt/6.5.3/mingw_64/include/QtQuickWidgets/qtquickwidgetsglobal.h \
 		D:/Qt/6.5.3/mingw_64/include/QtQuickWidgets/qtquickwidgetsexports.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QCalendarWidget \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qcalendarwidget.h \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/Q3DBars \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/q3dbars.h \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/qabstract3dgraph.h \
@@ -2682,6 +2550,16 @@ debug/modifiermachine.o: ../../modifiermachine.cpp ui_modifiermachine.h \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/QValue3DAxis \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/Q3DTheme \
 		D:/Qt/6.5.3/mingw_64/include/QtDataVisualization/Q3DCamera \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QDialog \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
 		../../modifiermachine.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\modifiermachine.o ..\..\modifiermachine.cpp
 
