@@ -3,14 +3,14 @@
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="windowModality">
-   <enum>Qt::ApplicationModal</enum>
+   <enum>Qt::WindowModality::ApplicationModal</enum>
   </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1642</width>
-    <height>850</height>
+    <width>1291</width>
+    <height>742</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,8 +23,8 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>-180</x>
+      <y>-30</y>
       <width>1642</width>
       <height>850</height>
      </rect>
@@ -36,7 +36,7 @@
      <widget class="QWidget" name="widget" native="true">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>200</x>
         <y>50</y>
         <width>1291</width>
         <height>741</height>
@@ -146,8 +146,8 @@ QPushButton:pressed {
      <widget class="QStackedWidget" name="stackedWidget_2">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
+        <x>180</x>
+        <y>30</y>
         <width>1642</width>
         <height>850</height>
        </rect>
@@ -1244,6 +1244,7 @@ QPushButton:pressed {
     background-repeat: no-repeat;  /* Ne pas répéter l'image */
     background-size: cover;        /* Adapter l'image à la taille du widget */
 background-position: left top; 
+
 }
 </string>
        </property>
@@ -1410,8 +1411,8 @@ QPushButton:pressed {
        <widget class="QPushButton" name="stat">
         <property name="geometry">
          <rect>
-          <x>1270</x>
-          <y>390</y>
+          <x>1070</x>
+          <y>330</y>
           <width>201</width>
           <height>61</height>
          </rect>
@@ -1471,8 +1472,8 @@ QPushButton::icon {
        <widget class="QPushButton" name="exportButton">
         <property name="geometry">
          <rect>
-          <x>1270</x>
-          <y>540</y>
+          <x>1070</x>
+          <y>450</y>
           <width>201</width>
           <height>61</height>
          </rect>
@@ -1532,8 +1533,8 @@ QPushButton::icon {
        <widget class="QPushButton" name="donneesBtn">
         <property name="geometry">
          <rect>
-          <x>1270</x>
-          <y>320</y>
+          <x>1070</x>
+          <y>270</y>
           <width>201</width>
           <height>61</height>
          </rect>
@@ -1593,8 +1594,8 @@ QPushButton::icon {
        <widget class="QPushButton" name="ajoutcentreBtn">
         <property name="geometry">
          <rect>
-          <x>1270</x>
-          <y>660</y>
+          <x>1070</x>
+          <y>580</y>
           <width>191</width>
           <height>61</height>
          </rect>
@@ -1654,10 +1655,10 @@ QPushButton::icon {
        <widget class="QStackedWidget" name="stackedWidget_3">
         <property name="geometry">
          <rect>
-          <x>349</x>
-          <y>229</y>
-          <width>891</width>
-          <height>541</height>
+          <x>320</x>
+          <y>220</y>
+          <width>781</width>
+          <height>521</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1673,7 +1674,7 @@ QPushButton::icon {
            <rect>
             <x>0</x>
             <y>-1</y>
-            <width>901</width>
+            <width>781</width>
             <height>551</height>
            </rect>
           </property>
@@ -1688,9 +1689,9 @@ QPushButton::icon {
          <widget class="QPushButton" name="statBtn">
           <property name="geometry">
            <rect>
-            <x>730</x>
-            <y>430</y>
-            <width>121</width>
+            <x>670</x>
+            <y>420</y>
+            <width>81</width>
             <height>41</height>
            </rect>
           </property>
@@ -1724,9 +1725,9 @@ QPushButton:pressed {
          <widget class="QComboBox" name="type_m">
           <property name="geometry">
            <rect>
-            <x>90</x>
-            <y>180</y>
-            <width>201</width>
+            <x>40</x>
+            <y>160</y>
+            <width>211</width>
             <height>31</height>
            </rect>
           </property>
@@ -1807,8 +1808,8 @@ QComboBox::down-arrow {
          <widget class="QPushButton" name="modifierButton">
           <property name="geometry">
            <rect>
-            <x>360</x>
-            <y>430</y>
+            <x>310</x>
+            <y>420</y>
             <width>171</width>
             <height>41</height>
            </rect>
@@ -1843,8 +1844,8 @@ QPushButton:pressed {
          <widget class="QLineEdit" name="id_machine">
           <property name="geometry">
            <rect>
-            <x>120</x>
-            <y>230</y>
+            <x>80</x>
+            <y>200</y>
             <width>81</width>
             <height>31</height>
            </rect>
@@ -1859,8 +1860,8 @@ QPushButton:pressed {
          <widget class="QDateEdit" name="date_maintenance">
           <property name="geometry">
            <rect>
-            <x>70</x>
-            <y>360</y>
+            <x>50</x>
+            <y>320</y>
             <width>211</width>
             <height>29</height>
            </rect>
@@ -1908,8 +1909,8 @@ QDateEdit:focus {
           </property>
           <property name="geometry">
            <rect>
-            <x>20</x>
-            <y>170</y>
+            <x>10</x>
+            <y>120</y>
             <width>161</width>
             <height>51</height>
            </rect>
@@ -1948,9 +1949,9 @@ color:white; }</string>
           </property>
           <property name="geometry">
            <rect>
-            <x>360</x>
-            <y>80</y>
-            <width>711</width>
+            <x>330</x>
+            <y>90</y>
+            <width>641</width>
             <height>51</height>
            </rect>
           </property>
@@ -1973,7 +1974,7 @@ color:white; }</string>
 color:black; }</string>
           </property>
           <property name="text">
-           <string>ID            Type                                Statut                  Date maintenance            Localisation</string>
+           <string>ID          Type              Statut                Date maintenance          Localisation</string>
           </property>
           <property name="frame">
            <bool>false</bool>
@@ -1985,8 +1986,8 @@ color:black; }</string>
          <widget class="QPushButton" name="confirmerMachine">
           <property name="geometry">
            <rect>
-            <x>80</x>
-            <y>480</y>
+            <x>60</x>
+            <y>430</y>
             <width>161</width>
             <height>41</height>
            </rect>
@@ -2021,8 +2022,8 @@ QPushButton:pressed {
          <widget class="QLineEdit" name="searchLineEdit">
           <property name="geometry">
            <rect>
-            <x>330</x>
-            <y>20</y>
+            <x>280</x>
+            <y>40</y>
             <width>211</width>
             <height>31</height>
            </rect>
@@ -2046,8 +2047,8 @@ QPushButton:pressed {
          <widget class="QPushButton" name="supprimerMachine">
           <property name="geometry">
            <rect>
-            <x>540</x>
-            <y>430</y>
+            <x>490</x>
+            <y>420</y>
             <width>171</width>
             <height>41</height>
            </rect>
@@ -2082,9 +2083,9 @@ QPushButton:pressed {
          <widget class="QComboBox" name="statut_m">
           <property name="geometry">
            <rect>
-            <x>80</x>
-            <y>290</y>
-            <width>201</width>
+            <x>50</x>
+            <y>260</y>
+            <width>211</width>
             <height>31</height>
            </rect>
           </property>
@@ -2163,8 +2164,8 @@ QComboBox::down-arrow {
           </property>
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>390</y>
+            <x>10</x>
+            <y>340</y>
             <width>161</width>
             <height>51</height>
            </rect>
@@ -2203,8 +2204,8 @@ color:white; }</string>
           </property>
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>250</y>
+            <x>10</x>
+            <y>220</y>
             <width>161</width>
             <height>51</height>
            </rect>
@@ -2243,8 +2244,8 @@ color:white; }</string>
           </property>
           <property name="geometry">
            <rect>
-            <x>80</x>
-            <y>220</y>
+            <x>40</x>
+            <y>190</y>
             <width>51</width>
             <height>51</height>
            </rect>
@@ -2280,8 +2281,8 @@ color:white; }</string>
          <widget class="QComboBox" name="localisation">
           <property name="geometry">
            <rect>
-            <x>70</x>
-            <y>430</y>
+            <x>50</x>
+            <y>380</y>
             <width>211</width>
             <height>31</height>
            </rect>
@@ -2366,8 +2367,8 @@ QComboBox::down-arrow {
           </property>
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>320</y>
+            <x>10</x>
+            <y>280</y>
             <width>301</width>
             <height>51</height>
            </rect>
@@ -2403,10 +2404,10 @@ color:white; }</string>
          <widget class="QTableView" name="tableMachine">
           <property name="geometry">
            <rect>
-            <x>330</x>
-            <y>150</y>
-            <width>541</width>
-            <height>271</height>
+            <x>280</x>
+            <y>160</y>
+            <width>481</width>
+            <height>231</height>
            </rect>
           </property>
           <property name="font">
@@ -2414,13 +2415,25 @@ color:white; }</string>
             <bold>true</bold>
            </font>
           </property>
+          <property name="toolTip">
+           <string notr="true"/>
+          </property>
+          <property name="statusTip">
+           <string notr="true"/>
+          </property>
+          <property name="accessibleName">
+           <string notr="true"/>
+          </property>
+          <property name="accessibleDescription">
+           <string notr="true"/>
+          </property>
           <property name="styleSheet">
            <string notr="true"> border-radius: 20px; /* Coins arrondis */
 background-color: #1b2c55;
 color:white;</string>
           </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="dragDropOverwriteMode">
            <bool>false</bool>
@@ -2444,9 +2457,9 @@ color:white;</string>
          <widget class="QComboBox" name="comboBoxtrie">
           <property name="geometry">
            <rect>
-            <x>560</x>
-            <y>20</y>
-            <width>311</width>
+            <x>500</x>
+            <y>40</y>
+            <width>261</width>
             <height>31</height>
            </rect>
           </property>
@@ -2522,10 +2535,10 @@ QComboBox::down-arrow {
          <widget class="QLabel" name="typelabel">
           <property name="geometry">
            <rect>
-            <x>50</x>
+            <x>60</x>
             <y>60</y>
-            <width>211</width>
-            <height>111</height>
+            <width>161</width>
+            <height>71</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -2543,10 +2556,10 @@ QComboBox::down-arrow {
          <widget class="QWidget" name="verticalLayoutWidget">
           <property name="geometry">
            <rect>
-            <x>0</x>
-            <y>-1</y>
-            <width>891</width>
-            <height>541</height>
+            <x>-10</x>
+            <y>0</y>
+            <width>801</width>
+            <height>501</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayoutStat"/>
@@ -2557,9 +2570,9 @@ QComboBox::down-arrow {
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
-            <width>891</width>
-            <height>541</height>
+            <y>10</y>
+            <width>781</width>
+            <height>501</height>
            </rect>
           </property>
           <property name="cursor">
@@ -2606,8 +2619,8 @@ color: rgb(255, 0, 0);</string>
        <widget class="QPushButton" name="calendrierBtn">
         <property name="geometry">
          <rect>
-          <x>1270</x>
-          <y>470</y>
+          <x>1070</x>
+          <y>390</y>
           <width>191</width>
           <height>61</height>
          </rect>
@@ -2662,24 +2675,6 @@ QPushButton::icon {
         <property name="icon">
          <iconset>
           <normaloff>calendriericon.png</normaloff>calendriericon.png</iconset>
-        </property>
-       </widget>
-       <widget class="QWidget" name="widget_3" native="true">
-        <property name="geometry">
-         <rect>
-          <x>299</x>
-          <y>50</y>
-          <width>1351</width>
-          <height>171</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QWidget{
-    background-image: url(&quot;C:/Users/21658/Desktop/projet2024-2025/mech/enseigne.png&quot;);background-color: rgb(27, 44, 85);
- background-position: center;   /* Centrer l'image */
-    background-repeat: no-repeat;  /* Ne pas répéter l'image */
-    background-size: cover;        /* Adapter l'image à la taille du widget */
-}</string>
         </property>
        </widget>
       </widget>
