@@ -32,7 +32,12 @@ public:
 
     bool ajouter();
     QStandardItemModel* afficher();
+
+    static bool supprimerMachine(int id_machine);
     bool modifier();
+
+
+
 
 
 private:

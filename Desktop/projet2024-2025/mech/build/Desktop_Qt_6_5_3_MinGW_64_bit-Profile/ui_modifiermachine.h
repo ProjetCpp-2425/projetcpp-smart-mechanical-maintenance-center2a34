@@ -230,7 +230,6 @@ public:
         statut_m->addItem(QString());
         statut_m->addItem(QString());
         statut_m->addItem(QString());
-        statut_m->addItem(QString());
         statut_m->setObjectName("statut_m");
         statut_m->setGeometry(QRect(310, 180, 191, 31));
         statut_m->setStyleSheet(QString::fromUtf8("QComboBox {\n"
@@ -285,9 +284,6 @@ public:
         localisation->addItem(QString());
         localisation->addItem(QString());
         localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
         localisation->setObjectName("localisation");
         localisation->setGeometry(QRect(310, 260, 191, 31));
         localisation->setStyleSheet(QString::fromUtf8("QComboBox {\n"
@@ -338,7 +334,6 @@ public:
 "    height: 10px; /* Hauteur de la fl\303\250che */\n"
 "}"));
         type_m = new QComboBox(modifiermachine);
-        type_m->addItem(QString());
         type_m->addItem(QString());
         type_m->addItem(QString());
         type_m->addItem(QString());
@@ -403,31 +398,26 @@ public:
         modifiermachine->setWindowTitle(QCoreApplication::translate("modifiermachine", "Dialog", nullptr));
         confirmerButton->setText(QCoreApplication::translate("modifiermachine", "Confirmer", nullptr));
         annulerButton->setText(QCoreApplication::translate("modifiermachine", "annuler", nullptr));
-        lineEdit_3->setText(QCoreApplication::translate("modifiermachine", "ID  de la machine a modifi\303\251         ", nullptr));
+        lineEdit_3->setText(QCoreApplication::translate("modifiermachine", "ID  de la machine a modifier", nullptr));
         lineEdit_4->setText(QCoreApplication::translate("modifiermachine", "type", nullptr));
         lineEdit_5->setText(QCoreApplication::translate("modifiermachine", "statut", nullptr));
         lineEdit_6->setText(QCoreApplication::translate("modifiermachine", "date maintenance", nullptr));
         lineEdit_7->setText(QCoreApplication::translate("modifiermachine", "localisation", nullptr));
         lineEdit_8->setText(QCoreApplication::translate("modifiermachine", "Modification d'une machine", nullptr));
         id_machine->setText(QString());
-        statut_m->setItemText(0, QCoreApplication::translate("modifiermachine", "Choisir", nullptr));
-        statut_m->setItemText(1, QCoreApplication::translate("modifiermachine", "en fonctionnement", nullptr));
-        statut_m->setItemText(2, QCoreApplication::translate("modifiermachine", "en maintenance", nullptr));
-        statut_m->setItemText(3, QCoreApplication::translate("modifiermachine", "en panne", nullptr));
+        statut_m->setItemText(0, QCoreApplication::translate("modifiermachine", "en fonctionnement", nullptr));
+        statut_m->setItemText(1, QCoreApplication::translate("modifiermachine", "en maintenance", nullptr));
+        statut_m->setItemText(2, QCoreApplication::translate("modifiermachine", "en panne", nullptr));
 
-        localisation->setItemText(0, QCoreApplication::translate("modifiermachine", "Choisir", nullptr));
-        localisation->setItemText(1, QCoreApplication::translate("modifiermachine", "Tunis", nullptr));
-        localisation->setItemText(2, QCoreApplication::translate("modifiermachine", "Monastir", nullptr));
-        localisation->setItemText(3, QCoreApplication::translate("modifiermachine", "Jendouba", nullptr));
-        localisation->setItemText(4, QCoreApplication::translate("modifiermachine", "Bizert", nullptr));
-        localisation->setItemText(5, QString());
-        localisation->setItemText(6, QString());
+        localisation->setItemText(0, QCoreApplication::translate("modifiermachine", "Tunis", nullptr));
+        localisation->setItemText(1, QCoreApplication::translate("modifiermachine", "Monastir", nullptr));
+        localisation->setItemText(2, QCoreApplication::translate("modifiermachine", "Jendouba", nullptr));
+        localisation->setItemText(3, QCoreApplication::translate("modifiermachine", "Bizert", nullptr));
 
-        type_m->setItemText(0, QCoreApplication::translate("modifiermachine", "Choisir", nullptr));
-        type_m->setItemText(1, QCoreApplication::translate("modifiermachine", "Tour CNC", nullptr));
-        type_m->setItemText(2, QCoreApplication::translate("modifiermachine", "Fraiseuse CNC", nullptr));
-        type_m->setItemText(3, QCoreApplication::translate("modifiermachine", "Robots industriels", nullptr));
-        type_m->setItemText(4, QCoreApplication::translate("modifiermachine", "Imprimante 3D", nullptr));
+        type_m->setItemText(0, QCoreApplication::translate("modifiermachine", "Tour CNC", nullptr));
+        type_m->setItemText(1, QCoreApplication::translate("modifiermachine", "Fraiseuse CNC", nullptr));
+        type_m->setItemText(2, QCoreApplication::translate("modifiermachine", "Robots industriels", nullptr));
+        type_m->setItemText(3, QCoreApplication::translate("modifiermachine", "Imprimante 3D", nullptr));
 
     } // retranslateUi
 

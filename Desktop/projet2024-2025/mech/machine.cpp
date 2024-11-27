@@ -1,4 +1,6 @@
 #include "machine.h"
+#include "mainwindow.h"
+
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
@@ -12,6 +14,22 @@
 #include <QSqlQuery>
 #include <QSqlDatabase>
 #include <QSqlError>
+#include "ui_mainwindow.h"
+
+#include <QtCharts/QChartView>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QChart>
+#include <QtCharts/QBarCategoryAxis>
+#include <QSqlQuery>
+#include <QPropertyAnimation>
+#include <QEasingCurve>
+
+
+
+
+
+
 
 
 Machine::Machine() {}
@@ -76,7 +94,6 @@ bool Machine::ajouter() {
         QSqlQuery query;
         query.prepare("INSERT INTO MACHINE (id_machine, type_m, statut_m, date_maintenance, localisation) "
                       "VALUES (:id_machine, :type_m, :statut_m, :date_maintenance, :localisation)");
-
         query.bindValue(":id_machine", id_machine);
         query.bindValue(":type_m", type_m);
         query.bindValue(":statut_m", statut_m);
@@ -132,6 +149,19 @@ QStandardItemModel* Machine::afficher()
     return model;
 }
 
+bool Machine::supprimerMachine(int id_machine) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM MACHINE WHERE id_machine = :id_machine");
+    query.bindValue(":id_machine", id_machine);
+
+    if (query.exec()) {
+        return true; // Suppression réussie
+    } else {
+        qDebug() << "Erreur de suppression :" << query.lastError().text();
+        return false; // Échec de la suppression
+    }
+}
+
 
 bool Machine::updateInDatabase()
 {
@@ -154,3 +184,4 @@ bool Machine::updateInDatabase()
         return false;  // Erreur lors de la mise à jour
     }
 }
+/////////////

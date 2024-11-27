@@ -19,6 +19,8 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -34,6 +36,16 @@ public:
     QWidget *page_2;
     QPushButton *ButtonConnecter;
     QPushButton *sinscrir;
+    QLineEdit *cin_c;
+    QLineEdit *mdp_c;
+    QPushButton *mdp_oublie;
+    QWidget *ForgotPassword;
+    QLineEdit *cinLine;
+    QLineEdit *emailLine;
+    QPushButton *send;
+    QPushButton *Retour;
+    QTextEdit *textEdit;
+    QLineEdit *phoneLine;
     QWidget *pagecentral;
     QStackedWidget *stackedWidget_2;
     QWidget *page;
@@ -44,6 +56,8 @@ public:
     QPushButton *ButtonTrensactions;
     QPushButton *ButtonApropos;
     QWidget *widget_2;
+    QPushButton *sedeconnecter;
+    QPushButton *parametre;
     QWidget *employes;
     QPushButton *ButtonMachines1;
     QPushButton *ButtonPage1;
@@ -51,12 +65,19 @@ public:
     QPushButton *ButtonApropos1;
     QPushButton *ButtonTrensactions1;
     QPushButton *ButtonVehicules1;
-    QLineEdit *lineEdit_10;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_11;
-    QComboBox *comboBox_5;
+    QLineEdit *rechercher;
+    QLineEdit *cin_e;
+    QLineEdit *salaire_e;
+    QComboBox *filter;
     QPushButton *stat1Button;
+    QComboBox *etat_e;
+    QPushButton *confirmerEmployes;
+    QPushButton *supprimerEmployes;
+    QTableView *tableEmployes;
+    QPushButton *modifierEmployes;
+    QPushButton *saveEmploye;
+    QComboBox *special_e;
+    QPushButton *exportButton;
     QWidget *vehicules;
     QPushButton *ButtonEmployes2;
     QPushButton *ButtonPage2;
@@ -82,17 +103,16 @@ public:
     QLineEdit *lineEdit_9;
     QComboBox *comboBox_6;
     QPushButton *stat3;
-    QTableView *tableMachine;
+    QTableWidget *tableMachine;
     QPushButton *confirmerMachine;
-    QPushButton *modifierButton;
+    QPushButton *modifierMachine;
     QPushButton *supprimerMachine;
-    QPushButton *tousButton;
+    QPushButton *toutmachine;
     QDateEdit *date_maintenance;
     QComboBox *type_m;
     QLineEdit *id_machine;
     QComboBox *statut_m;
-    QLineEdit *lineEdit_3;
-    QComboBox *localisation;
+    QLineEdit *localisation;
     QWidget *trensactions;
     QPushButton *ButtonPage4;
     QPushButton *ButtonVehicules4;
@@ -115,9 +135,28 @@ public:
     QPushButton *ButtonEmployes5;
     QPushButton *ButtonTrensactions5;
     QPushButton *ButtonApropos5;
+    QWidget *page_4;
+    QPushButton *supp_u;
+    QPushButton *modif_u;
+    QPushButton *save_u;
+    QPushButton *retour_u;
+    QComboBox *role_u;
+    QLineEdit *nom_u;
+    QLineEdit *prenom_u;
+    QLineEdit *num_u;
+    QLineEdit *mot_u;
+    QLineEdit *mail_u;
     QWidget *page_3;
     QPushButton *seconnecter;
     QPushButton *ButtonCreer;
+    QLineEdit *email_u;
+    QLineEdit *cin_u;
+    QLineEdit *lastname_u;
+    QLineEdit *firstname_u;
+    QLineEdit *phone_u;
+    QLineEdit *mdp_u;
+    QComboBox *rolee_u;
+    QPushButton *addimage;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -127,6 +166,7 @@ public:
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(28, 35, 64);"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        centralwidget->setStyleSheet(QString::fromUtf8(""));
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
         stackedWidget->setGeometry(QRect(0, 0, 1291, 741));
@@ -136,7 +176,7 @@ public:
         widget->setObjectName("widget");
         widget->setGeometry(QRect(0, 0, 1291, 741));
         widget->setStyleSheet(QString::fromUtf8("QWidget#widget {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/page1.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/page1.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -154,7 +194,7 @@ public:
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
         page_2->setStyleSheet(QString::fromUtf8("QWidget#page_2 {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/page2.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/page2.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -191,18 +231,71 @@ public:
 "   \n"
 "}\n"
 ""));
+        cin_c = new QLineEdit(page_2);
+        cin_c->setObjectName("cin_c");
+        cin_c->setGeometry(QRect(990, 290, 191, 31));
+        cin_c->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        mdp_c = new QLineEdit(page_2);
+        mdp_c->setObjectName("mdp_c");
+        mdp_c->setGeometry(QRect(990, 380, 191, 31));
+        mdp_c->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        mdp_oublie = new QPushButton(page_2);
+        mdp_oublie->setObjectName("mdp_oublie");
+        mdp_oublie->setGeometry(QRect(1110, 420, 81, 16));
+        mdp_oublie->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: transparent;  /* Couleur de fond transparente */\n"
+"   \n"
+"}\n"
+""));
         stackedWidget->addWidget(page_2);
+        ForgotPassword = new QWidget();
+        ForgotPassword->setObjectName("ForgotPassword");
+        cinLine = new QLineEdit(ForgotPassword);
+        cinLine->setObjectName("cinLine");
+        cinLine->setGeometry(QRect(550, 140, 113, 22));
+        cinLine->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        emailLine = new QLineEdit(ForgotPassword);
+        emailLine->setObjectName("emailLine");
+        emailLine->setGeometry(QRect(550, 190, 113, 22));
+        emailLine->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        send = new QPushButton(ForgotPassword);
+        send->setObjectName("send");
+        send->setGeometry(QRect(460, 340, 75, 24));
+        send->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        Retour = new QPushButton(ForgotPassword);
+        Retour->setObjectName("Retour");
+        Retour->setGeometry(QRect(650, 340, 75, 24));
+        Retour->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        textEdit = new QTextEdit(ForgotPassword);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(520, 60, 171, 31));
+        textEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        phoneLine = new QLineEdit(ForgotPassword);
+        phoneLine->setObjectName("phoneLine");
+        phoneLine->setGeometry(QRect(550, 240, 113, 22));
+        phoneLine->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        stackedWidget->addWidget(ForgotPassword);
         pagecentral = new QWidget();
         pagecentral->setObjectName("pagecentral");
         pagecentral->setStyleSheet(QString::fromUtf8(""));
         stackedWidget_2 = new QStackedWidget(pagecentral);
         stackedWidget_2->setObjectName("stackedWidget_2");
         stackedWidget_2->setGeometry(QRect(0, 0, 1291, 741));
-        stackedWidget_2->setStyleSheet(QString::fromUtf8(""));
+        stackedWidget_2->setStyleSheet(QString::fromUtf8("QWidget#page4 {\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/page4.png\");\n"
+"    background-position: center;   /* Centrer l'image */\n"
+"    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
+"    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
+"}\n"
+""));
         page = new QWidget();
         page->setObjectName("page");
         page->setStyleSheet(QString::fromUtf8("QWidget#page {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/home.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/home.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -336,11 +429,22 @@ public:
 "    \n"
 "}\n"
 ""));
+        sedeconnecter = new QPushButton(page);
+        sedeconnecter->setObjectName("sedeconnecter");
+        sedeconnecter->setGeometry(QRect(40, 680, 211, 41));
+        sedeconnecter->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        parametre = new QPushButton(page);
+        parametre->setObjectName("parametre");
+        parametre->setGeometry(QRect(1160, 20, 41, 31));
+        parametre->setMouseTracking(true);
+        parametre->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
         stackedWidget_2->addWidget(page);
         employes = new QWidget();
         employes->setObjectName("employes");
         employes->setStyleSheet(QString::fromUtf8("QWidget#employes {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/employes.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/employes.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -466,10 +570,10 @@ public:
 "    background-color: rgba(169, 169, 169, 255); /* Couleur gris fonc\303\251 lors du clic */\n"
 "}\n"
 ""));
-        lineEdit_10 = new QLineEdit(employes);
-        lineEdit_10->setObjectName("lineEdit_10");
-        lineEdit_10->setGeometry(QRect(690, 240, 351, 51));
-        lineEdit_10->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+        rechercher = new QLineEdit(employes);
+        rechercher->setObjectName("rechercher");
+        rechercher->setGeometry(QRect(690, 240, 351, 51));
+        rechercher->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "	background-color: rgb(255, 255, 255);\n"
 "    font-family: \"OCR A Extended\";  /* D\303\251finit la police sur OCR A Extended */\n"
 "    /*font-size: 14px;                /* Taille de la police (ajustable) */\n"
@@ -479,29 +583,23 @@ public:
 "   /* border-radius: 5px;             /* Coins arrondis */\n"
 "}\n"
 ""));
-        lineEdit = new QLineEdit(employes);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(380, 380, 181, 21));
-        lineEdit->setStyleSheet(QString::fromUtf8("\n"
+        cin_e = new QLineEdit(employes);
+        cin_e->setObjectName("cin_e");
+        cin_e->setGeometry(QRect(380, 380, 181, 21));
+        cin_e->setStyleSheet(QString::fromUtf8("\n"
 "background-color: rgb(255, 255, 255);"));
-        lineEdit_2 = new QLineEdit(employes);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(380, 440, 181, 21));
-        lineEdit_2->setStyleSheet(QString::fromUtf8("\n"
+        salaire_e = new QLineEdit(employes);
+        salaire_e->setObjectName("salaire_e");
+        salaire_e->setGeometry(QRect(380, 440, 181, 21));
+        salaire_e->setStyleSheet(QString::fromUtf8("\n"
 "background-color: rgb(255, 255, 255);"));
-        lineEdit_11 = new QLineEdit(employes);
-        lineEdit_11->setObjectName("lineEdit_11");
-        lineEdit_11->setGeometry(QRect(380, 500, 181, 21));
-        lineEdit_11->setStyleSheet(QString::fromUtf8("\n"
-"background-color: rgb(255, 255, 255);"));
-        comboBox_5 = new QComboBox(employes);
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->setObjectName("comboBox_5");
-        comboBox_5->setGeometry(QRect(1050, 240, 171, 51));
-        comboBox_5->setStyleSheet(QString::fromUtf8("QComboBox {\n"
+        filter = new QComboBox(employes);
+        filter->addItem(QString());
+        filter->addItem(QString());
+        filter->addItem(QString());
+        filter->setObjectName("filter");
+        filter->setGeometry(QRect(1050, 240, 171, 51));
+        filter->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
 "	background-color: rgb(188, 184, 238);\n"
 "    border: 2px solid #7a7a7a; /* Bordure */\n"
@@ -570,11 +668,92 @@ public:
 "    background-color: #218F64; /* Couleur de fond plus fonc\303\251e lorsqu'on clique */\n"
 "    border: 2px solid #1E7D5A; /* Bordure plus fonc\303\251e lorsqu'on clique */\n"
 "}"));
+        etat_e = new QComboBox(employes);
+        etat_e->addItem(QString());
+        etat_e->addItem(QString());
+        etat_e->setObjectName("etat_e");
+        etat_e->setGeometry(QRect(380, 560, 181, 41));
+        confirmerEmployes = new QPushButton(employes);
+        confirmerEmployes->setObjectName("confirmerEmployes");
+        confirmerEmployes->setEnabled(true);
+        confirmerEmployes->setGeometry(QRect(404, 693, 131, 31));
+        confirmerEmployes->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        supprimerEmployes = new QPushButton(employes);
+        supprimerEmployes->setObjectName("supprimerEmployes");
+        supprimerEmployes->setGeometry(QRect(900, 683, 161, 31));
+        supprimerEmployes->setMouseTracking(true);
+        supprimerEmployes->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        tableEmployes = new QTableView(employes);
+        tableEmployes->setObjectName("tableEmployes");
+        tableEmployes->setGeometry(QRect(665, 381, 551, 281));
+        tableEmployes->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        modifierEmployes = new QPushButton(employes);
+        modifierEmployes->setObjectName("modifierEmployes");
+        modifierEmployes->setGeometry(QRect(710, 680, 161, 31));
+        modifierEmployes->setMouseTracking(true);
+        modifierEmployes->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        saveEmploye = new QPushButton(employes);
+        saveEmploye->setObjectName("saveEmploye");
+        saveEmploye->setGeometry(QRect(430, 640, 75, 24));
+        saveEmploye->setStyleSheet(QString::fromUtf8("background-color: rgb(144, 179, 182);"));
+        special_e = new QComboBox(employes);
+        special_e->addItem(QString());
+        special_e->addItem(QString());
+        special_e->setObjectName("special_e");
+        special_e->setGeometry(QRect(380, 500, 181, 31));
+        exportButton = new QPushButton(employes);
+        exportButton->setObjectName("exportButton");
+        exportButton->setGeometry(QRect(390, 240, 101, 51));
+        exportButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	\n"
+"	background-color: rgb(38, 109, 175);\n"
+"    color: white; /* Couleur du texte en blanc */\n"
+"    /*border-radius: 10px; /* Bords arrondis */\n"
+"    padding: 10px 20px; /* Espacement interne */\n"
+"   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
+"    font-size: 14px; /* Taille du texte */\n"
+"    font-weight: bold; /* Texte en gras */\n"
+"    border: 2px solid #0f5a82; /* Bordure plus fonc\303\251e */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #3660fa; /* Couleur de fond plus fonc\303\251e au survol */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #0f5a82; /* Couleur de fond plus fonc\303\251e lorsqu'on clique */\n"
+"    border: 2px solid #1E7D5A; /* Bordure plus fonc\303\251e lorsqu'on clique */\n"
+"}"));
         stackedWidget_2->addWidget(employes);
+        supprimerEmployes->raise();
+        confirmerEmployes->raise();
+        ButtonMachines1->raise();
+        ButtonPage1->raise();
+        ButtonEmployes1->raise();
+        ButtonApropos1->raise();
+        ButtonTrensactions1->raise();
+        ButtonVehicules1->raise();
+        rechercher->raise();
+        cin_e->raise();
+        salaire_e->raise();
+        filter->raise();
+        stat1Button->raise();
+        etat_e->raise();
+        tableEmployes->raise();
+        modifierEmployes->raise();
+        saveEmploye->raise();
+        special_e->raise();
+        exportButton->raise();
         vehicules = new QWidget();
         vehicules->setObjectName("vehicules");
         vehicules->setStyleSheet(QString::fromUtf8("QWidget#vehicules {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/vehicules.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/vehicules.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -894,7 +1073,7 @@ public:
         machines = new QWidget();
         machines->setObjectName("machines");
         machines->setStyleSheet(QString::fromUtf8("QWidget#machines {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/machines.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/machines.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -1106,116 +1285,89 @@ public:
 "    background-color: #218F64; /* Couleur de fond plus fonc\303\251e lorsqu'on clique */\n"
 "    border: 2px solid #1E7D5A; /* Bordure plus fonc\303\251e lorsqu'on clique */\n"
 "}"));
-        tableMachine = new QTableView(machines);
+        tableMachine = new QTableWidget(machines);
         tableMachine->setObjectName("tableMachine");
-        tableMachine->setGeometry(QRect(675, 381, 541, 291));
-        QFont font;
-        font.setBold(true);
-        tableMachine->setFont(font);
-        tableMachine->setStyleSheet(QString::fromUtf8(" border-radius: 20px; /* Coins arrondis */\n"
-"background-color: rgb(27, 44, 85);\n"
-"color:white;"));
-        tableMachine->setEditTriggers(QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed);
-        tableMachine->setDragDropOverwriteMode(false);
-        tableMachine->setShowGrid(true);
-        tableMachine->horizontalHeader()->setVisible(false);
-        tableMachine->horizontalHeader()->setHighlightSections(false);
-        tableMachine->verticalHeader()->setVisible(false);
-        tableMachine->verticalHeader()->setHighlightSections(false);
+        tableMachine->setGeometry(QRect(675, 381, 541, 281));
         confirmerMachine = new QPushButton(machines);
         confirmerMachine->setObjectName("confirmerMachine");
-        confirmerMachine->setGeometry(QRect(400, 680, 161, 41));
+        confirmerMachine->setGeometry(QRect(420, 690, 121, 31));
         confirmerMachine->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
-"    font-size: 16px; /* Taille de la police */\n"
-"    color: white; /* Couleur du texte */\n"
-"    background-color: #4CAF50; /* Couleur de fond */\n"
-"    border: none; /* Pas de bordure */\n"
-"   border-radius: 20px; /* Coins arrondis */\n"
-"    padding: 10px 20px; /* Espacement interne */\n"
-"    cursor: pointer; /* Changement du curseur au survol */\n"
+"    background-color: transparent;            /* Couleur de fond transparente */\n"
+"    border: 2px solid transparent;            /* Pas de bordure par d\303\251faut */\n"
+"    color: black;                             /* Couleur du texte */\n"
+"    padding: 10px;                            /* Espacement interne */\n"
+"    border-radius: 20px;                      /* Coins arrondis */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: green; /* Couleur de fond au survol */\n"
+"   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacit\303\251) */\n"
+"   /* border: 2px solid gray;                     /* Bordure grise au survol */\n"
+"    border-radius: 20px;      \n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color:green; /* Couleur de fond lorsqu'on clique */\n"
-"    padding-top: 9px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
-"    padding-left: 19px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
+"    background-color: rgba(169, 169, 169, 255); /* Couleur gris fonc\303\251 lors du clic */\n"
+"      border-radius: 20px;    \n"
 "}\n"
 ""));
-        modifierButton = new QPushButton(machines);
-        modifierButton->setObjectName("modifierButton");
-        modifierButton->setGeometry(QRect(720, 680, 171, 41));
-        modifierButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
-"    font-size: 16px; /* Taille de la police */\n"
-"    color: white; /* Couleur du texte */\n"
-"    background-color: #b0b7c7; /* Couleur de fond */\n"
-"    border: none; /* Pas de bordure */\n"
-"    border-radius: 20px; /* Coins arrondis */\n"
-"    padding: 10px 20px; /* Espacement interne */\n"
-"    cursor: pointer; /* Changement du curseur au survol */\n"
+        modifierMachine = new QPushButton(machines);
+        modifierMachine->setObjectName("modifierMachine");
+        modifierMachine->setGeometry(QRect(720, 680, 161, 31));
+        modifierMachine->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: transparent;            /* Couleur de fond transparente */\n"
+"    border: 2px solid transparent;            /* Pas de bordure par d\303\251faut */\n"
+"    color: black;                             /* Couleur du texte */\n"
+"    padding: 10px;                            /* Espacement interne */\n"
+"    border-radius: 20px;                      /* Coins arrondis */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: #1b2c55; /* Couleur de fond au survol */\n"
+"   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacit\303\251) */\n"
+"   /* border: 2px solid gray;                     /* Bordure grise au survol */\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */\n"
-"    padding-top: 9px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
-"    padding-left: 19px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
+"    background-color: rgba(169, 169, 169, 255); /* Couleur gris fonc\303\251 lors du clic */\n"
 "}\n"
 ""));
         supprimerMachine = new QPushButton(machines);
         supprimerMachine->setObjectName("supprimerMachine");
-        supprimerMachine->setGeometry(QRect(900, 680, 171, 41));
+        supprimerMachine->setGeometry(QRect(910, 680, 161, 31));
         supprimerMachine->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
-"    font-size: 16px; /* Taille de la police */\n"
-"    color: white; /* Couleur du texte */\n"
-"    background-color: red; /* Couleur de fond */\n"
-"    border: none; /* Pas de bordure */\n"
-"   border-radius: 20px; /* Coins arrondis */\n"
-"    padding: 10px 20px; /* Espacement interne */\n"
-"    cursor: pointer; /* Changement du curseur au survol */\n"
+"    background-color: transparent;            /* Couleur de fond transparente */\n"
+"    border: 2px solid transparent;            /* Pas de bordure par d\303\251faut */\n"
+"    color: black;                             /* Couleur du texte */\n"
+"    padding: 10px;                            /* Espacement interne */\n"
+"    border-radius: 20px;                      /* Coins arrondis */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: #1b2c55; /* Couleur de fond au survol */\n"
+"   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacit\303\251) */\n"
+"   /* border: 2px solid gray;                     /* Bordure grise au survol */\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */\n"
-"    padding-top: 9px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
-"    padding-left: 19px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
+"    background-color: rgba(169, 169, 169, 255); /* Couleur gris fonc\303\251 lors du clic */\n"
 "}\n"
 ""));
-        tousButton = new QPushButton(machines);
-        tousButton->setObjectName("tousButton");
-        tousButton->setGeometry(QRect(1080, 680, 121, 41));
-        tousButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
-"    font-size: 16px; /* Taille de la police */\n"
-"    color: white; /* Couleur du texte */\n"
-"    background-color:#b0b7c7; /* Couleur de fond */\n"
-"    border: none; /* Pas de bordure */\n"
-"    border-radius: 20px; /* Coins arrondis */\n"
-"    padding: 10px 20px; /* Espacement interne */\n"
-"    cursor: pointer; /* Changement du curseur au survol */\n"
+        toutmachine = new QPushButton(machines);
+        toutmachine->setObjectName("toutmachine");
+        toutmachine->setGeometry(QRect(1090, 680, 101, 31));
+        toutmachine->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: transparent;            /* Couleur de fond transparente */\n"
+"    border: 2px solid transparent;            /* Pas de bordure par d\303\251faut */\n"
+"    color: black;                             /* Couleur du texte */\n"
+"    padding: 10px;                            /* Espacement interne */\n"
+"    border-radius: 20px;                      /* Coins arrondis */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: #1b2c55; /* Couleur de fond au survol */\n"
+"   background-color: rgba(128, 128, 128, 0.5); /* Gris transparent (50% d'opacit\303\251) */\n"
+"   /* border: 2px solid gray;                     /* Bordure grise au survol */\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color:#1b2c55; /* Couleur de fond lorsqu'on clique */\n"
-"    padding-top: 9px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
-"    padding-left: 19px; /* R\303\251duction de l'espacement interne pour un effet de clic */\n"
+"    background-color: rgba(169, 169, 169, 255); /* Couleur gris fonc\303\251 lors du clic */\n"
 "}\n"
 ""));
         date_maintenance = new QDateEdit(machines);
@@ -1257,6 +1409,8 @@ public:
 "}\n"
 ""));
         type_m = new QComboBox(machines);
+        type_m->addItem(QString());
+        type_m->addItem(QString());
         type_m->addItem(QString());
         type_m->addItem(QString());
         type_m->addItem(QString());
@@ -1369,84 +1523,34 @@ public:
 "    width: 10px; /* Largeur de la fl\303\250che */\n"
 "    height: 10px; /* Hauteur de la fl\303\250che */\n"
 "}"));
-        lineEdit_3 = new QLineEdit(machines);
-        lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setEnabled(true);
-        lineEdit_3->setGeometry(QRect(710, 310, 711, 51));
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("Impact")});
-        font1.setPointSize(12);
-        font1.setBold(false);
-        font1.setUnderline(false);
-        lineEdit_3->setFont(font1);
-        lineEdit_3->setAcceptDrops(true);
-        lineEdit_3->setAutoFillBackground(false);
-        lineEdit_3->setStyleSheet(QString::fromUtf8("QLineEdit { background-color: transparent;\n"
-"color:black; }"));
-        lineEdit_3->setFrame(false);
-        lineEdit_3->setReadOnly(false);
-        localisation = new QComboBox(machines);
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
-        localisation->addItem(QString());
+        localisation = new QLineEdit(machines);
         localisation->setObjectName("localisation");
-        localisation->setGeometry(QRect(390, 640, 191, 31));
-        localisation->setStyleSheet(QString::fromUtf8("QComboBox {\n"
-"   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */\n"
-"	background-color: rgb(188, 184, 238);\n"
-"    border: 2px solid #7a7a7a; /* Bordure */\n"
-"    border-radius: 10px; /* Coins arrondis */\n"
-"    padding: 5px 20px; /* Espacement interne */\n"
-"    color: #333; /* Couleur du texte */\n"
-"    font-size: 14px; /* Taille de la police */\n"
-"}\n"
-"\n"
-"/* Style de la liste d\303\251roulante */\n"
-"QComboBox QAbstractItemView {\n"
-"    background-color: #ffffff; /* Couleur de fond de la liste */\n"
-"    border: 1px solid #7a7a7a; /* Bordure de la liste */\n"
-"    selection-background-color: #0078d7; /* Couleur de fond lors de la s\303\251lection */\n"
-"    selection-color: white; /* Couleur du texte lors de la s\303\251lection */\n"
-"}\n"
-"\n"
-"/* Style pour le bouton de la liste d\303\251roulante */\n"
-"QComboBox::drop-down {\n"
-"    subcontrol-origin: padding;\n"
-"    subcontrol-position: top right;\n"
-"    width: 25px; /* Largeur du bouton de liste d\303\251roulante */\n"
-""
-                        "    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */\n"
-"}\n"
-"\n"
-"/* Style pour la fl\303\250che du bouton de liste d\303\251roulante */\n"
-"QComboBox::down-arrow {\n"
-"    image: url(arrow.png); /* Remplace par le chemin de ton image de fl\303\250che */\n"
-"    width: 10px; /* Largeur de la fl\303\250che */\n"
-"    height: 10px; /* Hauteur de la fl\303\250che */\n"
-"}\n"
-"\n"
-"/* Effet au survol */\n"
-"QComboBox:hover {\n"
-"    border: 2px solid #0056b3; /* Couleur de bordure au survol */\n"
-"}\n"
-"\n"
-"QComboBox:focus {\n"
-"    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */\n"
-"}\n"
-"QComboBox::down-arrow {\n"
-"    color: #333; /* Couleur de la fl\303\250che */\n"
-"    width: 10px; /* Largeur de la fl\303\250che */\n"
-"    height: 10px; /* Hauteur de la fl\303\250che */\n"
-"}"));
+        localisation->setGeometry(QRect(390, 640, 181, 21));
+        localisation->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         stackedWidget_2->addWidget(machines);
+        supprimerMachine->raise();
+        ButtonPage3->raise();
+        ButtonVehicules3->raise();
+        ButtonMachines3->raise();
+        ButtonEmployes3->raise();
+        ButtonTrensactions3->raise();
+        ButtonApropos3->raise();
+        lineEdit_9->raise();
+        comboBox_6->raise();
+        stat3->raise();
+        tableMachine->raise();
+        confirmerMachine->raise();
+        modifierMachine->raise();
+        toutmachine->raise();
+        date_maintenance->raise();
+        type_m->raise();
+        id_machine->raise();
+        statut_m->raise();
+        localisation->raise();
         trensactions = new QWidget();
         trensactions->setObjectName("trensactions");
         trensactions->setStyleSheet(QString::fromUtf8("QWidget#trensactions {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/trensactions.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/trensactions.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -1733,7 +1837,7 @@ public:
         apropos = new QWidget();
         apropos->setObjectName("apropos");
         apropos->setStyleSheet(QString::fromUtf8("QWidget#apropos {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/apropos.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/apropos.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -1860,11 +1964,56 @@ public:
 "}\n"
 ""));
         stackedWidget_2->addWidget(apropos);
+        page_4 = new QWidget();
+        page_4->setObjectName("page_4");
+        page_4->setStyleSheet(QString::fromUtf8("\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/page4.png\");\n"
+"    background-position: center;   /* Centrer l'image */\n"
+"    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
+"    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
+""));
+        supp_u = new QPushButton(page_4);
+        supp_u->setObjectName("supp_u");
+        supp_u->setGeometry(QRect(1100, 189, 131, 21));
+        supp_u->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);\n"
+"background-color: rgb(255, 0, 0);\n"
+"\n"
+""));
+        modif_u = new QPushButton(page_4);
+        modif_u->setObjectName("modif_u");
+        modif_u->setGeometry(QRect(980, 430, 91, 41));
+        save_u = new QPushButton(page_4);
+        save_u->setObjectName("save_u");
+        save_u->setGeometry(QRect(980, 490, 91, 41));
+        retour_u = new QPushButton(page_4);
+        retour_u->setObjectName("retour_u");
+        retour_u->setGeometry(QRect(1130, 20, 75, 24));
+        role_u = new QComboBox(page_4);
+        role_u->addItem(QString());
+        role_u->setObjectName("role_u");
+        role_u->setGeometry(QRect(180, 680, 431, 21));
+        role_u->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        nom_u = new QLineEdit(page_4);
+        nom_u->setObjectName("nom_u");
+        nom_u->setGeometry(QRect(180, 290, 431, 22));
+        prenom_u = new QLineEdit(page_4);
+        prenom_u->setObjectName("prenom_u");
+        prenom_u->setGeometry(QRect(180, 370, 431, 22));
+        num_u = new QLineEdit(page_4);
+        num_u->setObjectName("num_u");
+        num_u->setGeometry(QRect(180, 450, 431, 22));
+        mot_u = new QLineEdit(page_4);
+        mot_u->setObjectName("mot_u");
+        mot_u->setGeometry(QRect(180, 520, 431, 22));
+        mail_u = new QLineEdit(page_4);
+        mail_u->setObjectName("mail_u");
+        mail_u->setGeometry(QRect(180, 600, 431, 22));
+        stackedWidget_2->addWidget(page_4);
         stackedWidget->addWidget(pagecentral);
         page_3 = new QWidget();
         page_3->setObjectName("page_3");
         page_3->setStyleSheet(QString::fromUtf8("QWidget#page_3 {\n"
-"    background-image: url(\"C:/Users/21658/Desktop/projet2024-2025/mech/page3.png\");\n"
+"    background-image: url(\"C:/Users/HP/Desktop/mech/page3.png\");\n"
 "    background-position: center;   /* Centrer l'image */\n"
 "    background-repeat: no-repeat;  /* Ne pas r\303\251p\303\251ter l'image */\n"
 "    background-size: cover;        /* Adapter l'image \303\240 la taille du widget */\n"
@@ -1901,12 +2050,55 @@ public:
 "    font-weight: bold;                          /* Texte en gras lors du clic */\n"
 "}\n"
 ""));
+        email_u = new QLineEdit(page_3);
+        email_u->setObjectName("email_u");
+        email_u->setGeometry(QRect(990, 230, 191, 31));
+        email_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        cin_u = new QLineEdit(page_3);
+        cin_u->setObjectName("cin_u");
+        cin_u->setGeometry(QRect(1000, 300, 191, 31));
+        cin_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        lastname_u = new QLineEdit(page_3);
+        lastname_u->setObjectName("lastname_u");
+        lastname_u->setGeometry(QRect(990, 370, 191, 31));
+        lastname_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        firstname_u = new QLineEdit(page_3);
+        firstname_u->setObjectName("firstname_u");
+        firstname_u->setGeometry(QRect(990, 430, 191, 31));
+        firstname_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        phone_u = new QLineEdit(page_3);
+        phone_u->setObjectName("phone_u");
+        phone_u->setGeometry(QRect(990, 490, 191, 31));
+        phone_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        mdp_u = new QLineEdit(page_3);
+        mdp_u->setObjectName("mdp_u");
+        mdp_u->setGeometry(QRect(990, 560, 191, 31));
+        mdp_u->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border: none;\n"
+""));
+        rolee_u = new QComboBox(page_3);
+        rolee_u->addItem(QString());
+        rolee_u->setObjectName("rolee_u");
+        rolee_u->setGeometry(QRect(1150, 160, 81, 22));
+        addimage = new QPushButton(page_3);
+        addimage->setObjectName("addimage");
+        addimage->setGeometry(QRect(1150, 190, 81, 24));
         stackedWidget->addWidget(page_3);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1918,25 +2110,49 @@ public:
         buttonPage2->setText(QString());
         ButtonConnecter->setText(QCoreApplication::translate("MainWindow", "Se connecter", nullptr));
         sinscrir->setText(QString());
+        mdp_oublie->setText(QString());
+        send->setText(QCoreApplication::translate("MainWindow", "Send", nullptr));
+        Retour->setText(QCoreApplication::translate("MainWindow", "Cancel", nullptr));
+        textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Inserer votre CIN et Email</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         ButtonPage->setText(QString());
         ButtonEmployes->setText(QString());
         ButtonVehicules->setText(QString());
         ButtonMachines->setText(QString());
         ButtonTrensactions->setText(QString());
         ButtonApropos->setText(QString());
+        sedeconnecter->setText(QCoreApplication::translate("MainWindow", "Se Deconnecter", nullptr));
+        parametre->setText(QString());
         ButtonMachines1->setText(QString());
         ButtonPage1->setText(QString());
         ButtonEmployes1->setText(QString());
         ButtonApropos1->setText(QString());
         ButtonTrensactions1->setText(QString());
         ButtonVehicules1->setText(QString());
-        lineEdit_10->setText(QCoreApplication::translate("MainWindow", "Rechercher", nullptr));
-        comboBox_5->setItemText(0, QCoreApplication::translate("MainWindow", "Trier par", nullptr));
-        comboBox_5->setItemText(1, QCoreApplication::translate("MainWindow", "salaire", nullptr));
-        comboBox_5->setItemText(2, QCoreApplication::translate("MainWindow", "sp\303\251cialit\303\251", nullptr));
-        comboBox_5->setItemText(3, QCoreApplication::translate("MainWindow", "etat", nullptr));
+        rechercher->setText(QCoreApplication::translate("MainWindow", "Rechercher", nullptr));
+        filter->setItemText(0, QCoreApplication::translate("MainWindow", "Trier par", nullptr));
+        filter->setItemText(1, QCoreApplication::translate("MainWindow", "Salaire", nullptr));
+        filter->setItemText(2, QCoreApplication::translate("MainWindow", "Disponibilit\303\251", nullptr));
 
         stat1Button->setText(QCoreApplication::translate("MainWindow", "Stat", nullptr));
+        etat_e->setItemText(0, QCoreApplication::translate("MainWindow", "Disponible", nullptr));
+        etat_e->setItemText(1, QCoreApplication::translate("MainWindow", "Occup\303\251", nullptr));
+
+        confirmerEmployes->setText(QString());
+        supprimerEmployes->setText(QString());
+        modifierEmployes->setText(QString());
+        saveEmploye->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+        special_e->setItemText(0, QCoreApplication::translate("MainWindow", "Ingenieur", nullptr));
+        special_e->setItemText(1, QCoreApplication::translate("MainWindow", "Technicien", nullptr));
+
+        exportButton->setText(QCoreApplication::translate("MainWindow", "Export", nullptr));
         ButtonEmployes2->setText(QString());
         ButtonPage2->setText(QString());
         ButtonApropos2->setText(QString());
@@ -1959,30 +2175,22 @@ public:
         comboBox_6->setItemText(0, QCoreApplication::translate("MainWindow", "Trier par", nullptr));
 
         stat3->setText(QCoreApplication::translate("MainWindow", "Stat", nullptr));
-        confirmerMachine->setText(QCoreApplication::translate("MainWindow", "Confirmer", nullptr));
-        modifierButton->setText(QCoreApplication::translate("MainWindow", "Modifier", nullptr));
-        supprimerMachine->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
-        tousButton->setText(QCoreApplication::translate("MainWindow", "Tous", nullptr));
+        confirmerMachine->setText(QString());
+        modifierMachine->setText(QString());
+        supprimerMachine->setText(QString());
+        toutmachine->setText(QString());
         type_m->setItemText(0, QCoreApplication::translate("MainWindow", "Choisir", nullptr));
-        type_m->setItemText(1, QCoreApplication::translate("MainWindow", "Tour CNC", nullptr));
-        type_m->setItemText(2, QCoreApplication::translate("MainWindow", "Fraiseuse CNC", nullptr));
-        type_m->setItemText(3, QCoreApplication::translate("MainWindow", "Robots industriels", nullptr));
-        type_m->setItemText(4, QCoreApplication::translate("MainWindow", "Imprimante 3D", nullptr));
+        type_m->setItemText(1, QCoreApplication::translate("MainWindow", "Machine de d\303\251coupe", nullptr));
+        type_m->setItemText(2, QCoreApplication::translate("MainWindow", "Tour CNC", nullptr));
+        type_m->setItemText(3, QCoreApplication::translate("MainWindow", "Robot de soudage automatis\303\251", nullptr));
+        type_m->setItemText(4, QCoreApplication::translate("MainWindow", "Fraiseuse CNC", nullptr));
+        type_m->setItemText(5, QCoreApplication::translate("MainWindow", "Syst\303\250me de manutention", nullptr));
+        type_m->setItemText(6, QString());
 
-        id_machine->setText(QString());
         statut_m->setItemText(0, QCoreApplication::translate("MainWindow", "Choisir", nullptr));
         statut_m->setItemText(1, QCoreApplication::translate("MainWindow", "en fonctionnement", nullptr));
         statut_m->setItemText(2, QCoreApplication::translate("MainWindow", "en maintenance", nullptr));
         statut_m->setItemText(3, QCoreApplication::translate("MainWindow", "en panne", nullptr));
-
-        lineEdit_3->setText(QCoreApplication::translate("MainWindow", "ID            Type                                Statut                  Date maintenance            Localisation", nullptr));
-        localisation->setItemText(0, QCoreApplication::translate("MainWindow", "Choisir", nullptr));
-        localisation->setItemText(1, QCoreApplication::translate("MainWindow", "Tunis", nullptr));
-        localisation->setItemText(2, QCoreApplication::translate("MainWindow", "Monastir", nullptr));
-        localisation->setItemText(3, QCoreApplication::translate("MainWindow", "Jendouba", nullptr));
-        localisation->setItemText(4, QCoreApplication::translate("MainWindow", "Bizert", nullptr));
-        localisation->setItemText(5, QString());
-        localisation->setItemText(6, QString());
 
         ButtonPage4->setText(QString());
         ButtonVehicules4->setText(QString());
@@ -2002,8 +2210,17 @@ public:
         ButtonEmployes5->setText(QString());
         ButtonTrensactions5->setText(QString());
         ButtonApropos5->setText(QString());
+        supp_u->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        modif_u->setText(QCoreApplication::translate("MainWindow", "Modifier", nullptr));
+        save_u->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+        retour_u->setText(QCoreApplication::translate("MainWindow", "Retour", nullptr));
+        role_u->setItemText(0, QCoreApplication::translate("MainWindow", "Employee", nullptr));
+
         seconnecter->setText(QString());
         ButtonCreer->setText(QCoreApplication::translate("MainWindow", "Cr\303\251er", nullptr));
+        rolee_u->setItemText(0, QCoreApplication::translate("MainWindow", "Employe", nullptr));
+
+        addimage->setText(QCoreApplication::translate("MainWindow", "Image", nullptr));
     } // retranslateUi
 
 };

@@ -1,16 +1,19 @@
-#include "modifiermachine.h"
 #include "ui_modifiermachine.h"
+#include "ui_mainwindow.h"
 #include "connection.h"
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
 #include "machine.h"
 #include "mainwindow.h"
+#include "modifiermachine.h"
+
+
 
 
 
 modifiermachine::modifiermachine(QWidget *parent) :
-    QDialog(parent),
+   QDialog(parent),
     ui(new Ui::modifiermachine)
 {
     ui->setupUi(this);
@@ -22,7 +25,7 @@ modifiermachine::~modifiermachine()
 {
     delete ui;
 }
-/*
+
 void modifiermachine::setDetails(const QStringList &details)
 {
     // Mettre à jour l'interface avec les détails existants
@@ -32,31 +35,8 @@ void modifiermachine::setDetails(const QStringList &details)
     ui->statut_m->setCurrentText(details[2]);
     ui->date_maintenance->setDate(QDate::fromString(details[3], "yyyy-MM-dd"));
     ui->localisation->setCurrentText(details[4]);
-}*/
-void modifiermachine::setDetails(const QStringList &details)
-{
-    // Mettre à jour l'interface avec les détails existants
-    currentDetails = details;
-
-    // Vérifier que chaque champ est bien dans les détails fournis
-    if (details.size() >= 5) {
-        ui->id_machine->setText(details[0]);
-        ui->type_m->setCurrentText(details[1]);
-        ui->statut_m->setCurrentText(details[2]);
-
-        // Vérifier la conversion de la date
-        QDate date = QDate::fromString(details[3], "yyyy-MM-dd");
-        if (date.isValid()) {
-            ui->date_maintenance->setDate(date);
-        } else {
-            QMessageBox::warning(this, "Erreur", "Format de date invalide pour la date de maintenance.");
-        }
-
-        ui->localisation->setCurrentText(details[4]);
-    } else {
-        QMessageBox::critical(this, "Erreur", "Les détails sont incomplets pour initialiser la machine.");
-    }
 }
+
 
 
 QStringList modifiermachine::getDetails() const
@@ -81,7 +61,7 @@ void modifiermachine::on_confirmerButton_clicked()
     QString localisation = ui->localisation->currentText();
 
     // Vérification que tous les champs sont remplis
-    if (ui->id_machine->text().isEmpty() || type_m == "choisir" || statut_m == "choisir" || localisation == "choisir") {
+    if (ui->id_machine->text().isEmpty() || type_m == " Choisir" || statut_m == "Choisir" || localisation == "hoisir") {
         QMessageBox::warning(this, "Erreur", "Veuillez remplir tous les champs.");
         return;
     } else {
@@ -132,9 +112,14 @@ void modifiermachine::on_confirmerButton_clicked()
 }
 
 
+
+
+
+
+////////////////////////////////
 void modifiermachine::on_annulerButton_clicked()
 {
+
     reject();  // Rejette la modification et ferme la fenêtre
+
 }
-
-

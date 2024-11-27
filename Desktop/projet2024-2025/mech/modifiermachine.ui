@@ -128,7 +128,7 @@ QPushButton:pressed {
 color:red; }</string>
    </property>
    <property name="text">
-    <string>ID  de la machine a modifié         </string>
+    <string>ID  de la machine a modifier</string>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -496,11 +496,6 @@ QComboBox::down-arrow {
    </property>
    <item>
     <property name="text">
-     <string>Choisir</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
      <string>en fonctionnement</string>
     </property>
    </item>
@@ -574,11 +569,6 @@ QComboBox::down-arrow {
    </property>
    <item>
     <property name="text">
-     <string>Choisir</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
      <string>Tunis</string>
     </property>
    </item>
@@ -595,16 +585,6 @@ QComboBox::down-arrow {
    <item>
     <property name="text">
      <string>Bizert</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string/>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string/>
     </property>
    </item>
   </widget>
@@ -665,11 +645,6 @@ QComboBox::down-arrow {
     height: 10px; /* Hauteur de la flèche */
 }</string>
    </property>
-   <item>
-    <property name="text">
-     <string>Choisir</string>
-    </property>
-   </item>
    <item>
     <property name="text">
      <string>Tour CNC</string>
