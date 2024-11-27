@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>modifiermachine</class>
+ <widget class="QDialog" name="modifiermachine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(157, 188, 187);
+border-color: rgb(239, 245, 241);</string>
+  </property>
+  <widget class="QPushButton" name="confirmerButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: #4CAF50; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+   border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: green; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:green; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="annulerButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 16px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: red; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+   border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Changement du curseur au survol */
+}
+
+QPushButton:hover {
+    background-color: red; /* Couleur de fond au survol */
+}
+
+QPushButton:pressed {
+    background-color:red; /* Couleur de fond lorsqu'on clique */
+    padding-top: 9px; /* Réduction de l'espacement interne pour un effet de clic */
+    padding-left: 19px; /* Réduction de l'espacement interne pour un effet de clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>annuler</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>581</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:red; }</string>
+   </property>
+   <property name="text">
+    <string>ID  de la machine a modifier</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+   </property>
+   <property name="text">
+    <string>type</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>160</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+   </property>
+   <property name="text">
+    <string>statut</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+   </property>
+   <property name="text">
+    <string>date maintenance</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>240</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+   </property>
+   <property name="text">
+    <string>localisation</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Impact</family>
+     <pointsize>20</pointsize>
+     <bold>false</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit { background-color: transparent;
+color:black; }</string>
+   </property>
+   <property name="text">
+    <string>Modification d'une machine</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="date_maintenance">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>220</y>
+     <width>191</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+  
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 10px; /* Espacement interne */
+    color: white; /* Couleur du texte */
+    font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style pour le bouton de sélection de date */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de sélection de date */
+QDateEdit::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QDateEdit:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QDateEdit:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id_machine">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>80</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="statut_m">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>180</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>en fonctionnement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>en maintenance</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>en panne</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="localisation">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>260</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tunis</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Monastir</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jendouba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bizert</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="type_m">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+   font-family: 'OCR A Extended', sans-serif; /* Police OCR A Extended */
+	background-color: rgb(188, 184, 238);
+    border: 2px solid #7a7a7a; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 20px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style de la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Couleur de fond de la liste */
+    border: 1px solid #7a7a7a; /* Bordure de la liste */
+    selection-background-color: #0078d7; /* Couleur de fond lors de la sélection */
+    selection-color: white; /* Couleur du texte lors de la sélection */
+}
+
+/* Style pour le bouton de la liste déroulante */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* Largeur du bouton de liste déroulante */
+    border-left: 1px solid #7a7a7a; /* Bordure gauche du bouton */
+}
+
+/* Style pour la flèche du bouton de liste déroulante */
+QComboBox::down-arrow {
+    image: url(arrow.png); /* Remplace par le chemin de ton image de flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}
+
+/* Effet au survol */
+QComboBox:hover {
+    border: 2px solid #0056b3; /* Couleur de bordure au survol */
+}
+
+QComboBox:focus {
+    border: 2px solid #0078d7; /* Couleur de bordure lors du focus */
+}
+QComboBox::down-arrow {
+    color: #333; /* Couleur de la flèche */
+    width: 10px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tour CNC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fraiseuse CNC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Robots industriels</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Imprimante 3D</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

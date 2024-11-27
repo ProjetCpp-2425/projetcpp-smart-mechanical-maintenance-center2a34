@@ -1,0 +1,13 @@
+debug/connection.o
+debug/machine.o
+debug/main.o
+debug/mainwindow.o
+debug/modifiermachine.o
+debug/statwindow.o
+debug/map_qml.o
+debug/qmlcache_loader.o
+debug/qrc_qml_qmlcache.o
+debug/qrc_resources.o
+debug/moc_mainwindow.o
+debug/moc_modifiermachine.o
+debug/moc_statwindow.o

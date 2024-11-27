@@ -1,0 +1,13 @@
+release/connection.o
+release/machine.o
+release/main.o
+release/mainwindow.o
+release/modifiermachine.o
+release/statwindow.o
+release/map_qml.o
+release/qmlcache_loader.o
+release/qrc_qml_qmlcache.o
+release/qrc_resources.o
+release/moc_mainwindow.o
+release/moc_modifiermachine.o
+release/moc_statwindow.o
