@@ -1,0 +1,11 @@
+release/connection.o
+release/employes.o
+release/machine.o
+release/main.o
+release/mainwindow.o
+release/modifiermachine.o
+release/utilisateur.o
+release/vehicule.o
+release/qrc_qml.o
+release/moc_mainwindow.o
+release/moc_modifiermachine.o
